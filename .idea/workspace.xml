@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0865a767-ac3c-496d-a0f6-efce985a84dd" name="Changes" comment="">
+    <list default="true" id="0865a767-ac3c-496d-a0f6-efce985a84dd" name="Changes" comment="небольшие правки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/ChessPiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/ChessPiece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChessPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChessPiece.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +62,14 @@
       <option name="presentableId" value="Default" />
       <updated>1652725680992</updated>
     </task>
+    <task id="LOCAL-00001" summary="небольшие правки">
+      <created>1652804714990</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652804714991</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +82,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="небольшие правки" />
+    <option name="LAST_COMMIT_MESSAGE" value="небольшие правки" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
