@@ -47,8 +47,10 @@ public class ChessBoard {
                 setReason(String.format("На начальной клетке [%s, %s] отсутствует фигура. ", startLine, startColumn));
                 return false;
             }
-            if (!nowPlayer.equals(board[startLine][startColumn].getColor())) return false;
-
+            if (!nowPlayer.equals(board[startLine][startColumn].getColor())) {
+                setReason(String.format("Сейчас не ваш ход.", startLine, startColumn));
+                return false;
+            }
             if (board[startLine][startColumn].canMoveToPosition(this, startLine, startColumn, endLine, endColumn)) {
 
                 if (board[startLine][startColumn].getSymbol().equals("K") ||  // check position for castling
