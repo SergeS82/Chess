@@ -39,14 +39,12 @@ abstract public class ChessPiece {
                 pieceKing = (King) chessBoard.board[chessBoard.getWhiteKingLine()][chessBoard.getWhiteKingColumn()];
                 l1 = chessBoard.getWhiteKingLine();
                 c1 = chessBoard.getWhiteKingColumn();
-            }
-            if (thisPiece.getColor().equals("Black")) {
+            }else {
                 pieceKing = (King) chessBoard.board[chessBoard.getBlackKingLine()][chessBoard.getBlackKingColumn()];
                 l1 = chessBoard.getBlackKingLine();
                 c1 = chessBoard.getBlackKingColumn();
             }
-            assert pieceKing != null;
-            if (pieceKing.isUnderAttack(chessBoard,(thisPiece instanceof King)?toLine:l1, (thisPiece instanceof King)?toColumn:c1)) {
+            if (pieceKing != null && pieceKing.isUnderAttack(chessBoard,(thisPiece instanceof King)?toLine:l1, (thisPiece instanceof King)?toColumn:c1)) {
                 return false;
             }else return true;
         }
