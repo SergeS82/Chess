@@ -7,15 +7,20 @@ public class Rook extends ChessPiece{
     public String getColor() {
         return color;
     }
-
-    @Override
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
+        return canMoveToPosition(chessBoard, line, column, toLine, toColumn, true);
+    }
+    @Override
+    public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn, boolean isCheckUnderAttack) {
         int l, c;
-        if (super.canMoveToPosition(chessBoard, line, column, toLine, toColumn)) {
+        if (super.canMoveToPosition(chessBoard, line, column, toLine, toColumn, isCheckUnderAttack)) {
             l = Math.abs(line-toLine);
             c = Math.abs(column-toColumn);
-            if ((l > 0 && c == 0) || (c > 0 && l == 0)) return true;
-            else return false;
+            if ((l > 0 && c == 0) || (c > 0 && l == 0)) return super.isPathClear(chessBoard,line,column,toLine,toColumn,true);
+            else {
+                chessBoard.setReason("Ладья ходит по вертикали или горизонтали.");
+                return false;
+            }
         } else return false;
     }
 
